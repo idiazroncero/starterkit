@@ -1,11 +1,14 @@
-/**
- * Toolkit styles
- */
+// Variables
+@import "base/config";
 
-$main-color: green;
+// Fuentes
+@import "base/fonts";
 
+// Normalize.css adaptado
+@import "base/normalize";
 
+// Tipografía
+@import "base/tipografia";
 
-.caja {
-	border:1px solid $main-color;
-}
+// Elementos HTML
+@import "base/html_elements";

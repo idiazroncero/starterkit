@@ -1,0 +1,46 @@
+// -----
+// TIPOGRAFIA
+// -----
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:$fuente-titulos;
+}
+
+h1 {
+	@include adjust-font-size-to($h1);
+}
+
+h2 {
+	@include adjust-font-size-to($h2);
+}
+
+h3 {
+	@include adjust-font-size-to($h3);
+}
+
+h4 {
+	@include adjust-font-size-to($h4);
+}
+
+h5, small {
+	@include adjust-font-size-to($pequeno);
+}
+
+h6 {
+	@include adjust-font-size-to($enano);
+}
+
+p, h1, h2, h3, h4, h5, h6, article, section {
+	margin:0 0 rhythm(1) 0;
+}
+
+.light {
+	font-weight:$light;
+}
+
+.peque {
+	@include adjust-font-size-to($pequeno);
+	font-family:$fuente-alternativa;
+	font-weight:$bold;
+	text-transform:uppercase;
+}

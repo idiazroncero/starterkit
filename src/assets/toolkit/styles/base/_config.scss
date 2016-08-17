@@ -1,47 +1,94 @@
-@import "compass/typography/vertical_rhythm";
-@import "compass/functions/colors";
+@import "../mixins/colors";
 
 // -----
-// COMPASS' VERTICAL RHYTHM
+// VERTICAL RHYTHM DE COMPASS
 // -----
+	
+	// Tamaño base de tipografía e interlineado
+		$base-font-size: 16px;
+		$base-line-height:20px;
 
-$base-font-size: 17px;
-$base-line-height:24px;
-$rhythm-unit:"rem";
-$rem-with-px-fallback:true;
-$round-to-nearest-half-line:true;
+	// Unidad estándar
+		$rhythm-unit:"rem";
 
-// -----
-// TYPOGRAPHY
-// -----
+	// Fallback para navegadores menos capaces
+		$rem-with-px-fallback:true;
 
-$sans-serif: "Lato";
-$headlines: "Oswald";
+	// Permite redondear e interlineado a la mitad más cercana
+		$round-to-nearest-half-line:true;
 
-$h1: 5.05 * $base-font-size;
-$h2: 3.37 * $base-font-size;
-$h3: 2.25 * $base-font-size;
-$h4: 1.5 * $base-font-size; 
-$small: 0.667 * $base-font-size;
-$smaller: 0.5 * $base-font-size;
+
 
 // -----
-// COLORS
+// TIPOGRAFÍA
 // -----
 
-$negro: #3b3b3b;
-// Paleta de grises basada en el negro;
-$gris_o: tint($negro, 20%);
-$gris_mo: tint($negro, 40%);
-$gris_m: tint($negro, 50%);
-$gris_mc: tint($negro, 60%);
-$gris_c: tint($negro, 80%);
-$humo: #eee;
-$blanco: #fff;
+	// Define las familias
+		$roboto-condensed: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+		$roboto-slab: 'Roboto Slab', Georgia, Times, serif;	
+
+	// Define la fuente principal y la secundaria. No más de dos tipografías por proyecto;
+		$fuente-principal: $roboto-condensed;
+		$fuente-secundaria: $roboto-slab;	
+
+	// Asigna una fuente a cada uso
+		$fuente-body: $fuente-principal;
+		$fuente-titulos: $fuente-secundaria;
+		$fuente-alternativa: $fuente-principal;	
+
+	// Asigna un grosor específico a "bold" y "light"
+		$bold: bold;
+		$light: 300;	
+
+	// Define la proporción de aspecto de headlines. Se recomienda utilizar http://type-scale.com/
+		$enorme: 4 * $base-font-size;
+		$h1: 3.157 * $base-font-size;
+		$h2: 2.369 * $base-font-size;
+		$h3: 1.777 * $base-font-size;
+		$h4: 1.333 * $base-font-size; 
+		  // $base-font-size
+		$pequeno: 0.75 * $base-font-size;
+		$enano: 0.6 * $base-font-size;
+
+
+
+// -----
+// COLORES
+// -----
+	
+	// Se recomienda no utilizar un negro puro.
+		$negro: #3b3b3b;
+		$blanco: #fff;
+
+	// Paleta de grises basada en el negro;
+		$gris_o: tint($negro, 20%);
+		$gris_mo: tint($negro, 40%);
+		$gris_m: tint($negro, 50%);
+		$gris_mc: tint($negro, 60%);
+		$gris_c: tint($negro, 80%);
+
+	// Define manualmente un color de bajo contraste para fondos casi imperceptibles.
+		$humo: #eee;
+
+	// Define una paleta de colores
+		$rojo: red;
+		$verde: green;
+		$amarillo: yellow;
+
+	// Asigna los colores a usos definidos semánticamente.
+		$color-primario: $rojo;
+		$color-secundario: $verde;
+		$color-error: $rojo;
+		$color-ok: $verde;
 
 // -----
 // LAYOUT
 // -----
+	
+	// Define el ancho máximo del main wrapper
+		$max-width: 1500px;
 
-$max-width: 1500px;
-$gutter: rhythm(1);
+	// Define el ancho del espaciado entre columnas
+		$gutter: rhythm(1);
+
+@import "../mixins/vrhythm";

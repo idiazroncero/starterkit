@@ -71,6 +71,9 @@
 						<li>
 							<a href="base.html#listas">Listas</a>
 						</li>
+						<li>
+							<a href="base.html#tipografia">Tipografia</a>
+						</li>
 					</ul>
 				</li>
 				<li>
@@ -136,6 +139,8 @@
 
 	
 <h1 data-f-toggle="labels">Base</h1>
+
+<p>El margen se aplíca <strong>siempre</strong> como <code>margin-bottom</code></p>
 
 
 <div class="f-item-group" id="formularios">
@@ -395,6 +400,59 @@
 </div>
 
 		</div>
+
+</div>
+
+
+<div class="f-item-group" id="tipografia">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Tipografia</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Define la fuente principal y la secundaria. No más de dos tipografías por proyecto</p>
+<pre><code>$fuente-principal
+$fuente-secundaria
+</code></pre>
+<p>Define las familias</p>
+<pre><code>$fuente-body
+$fuente-titulos
+$fuente-alternativa
+</code></pre>
+<p>Asigna un grosor específico a &quot;bold&quot; y &quot;light&quot;</p>
+<pre><code>$bold
+$light
+</code></pre>
+
+</div>
+<div class="f-item-preview">
+	<h3>Fuente de títulos</h3>
+<p>Fuente de párrafo.</p>
+<p>Texto marcado como <strong>destacado</strong></p>
+<p>Texto en <em>énfasis</em></p>
+<p>Texto con grosor de tipografía <span class="light">ligera</span>, marcado como <code>.light</code></p>
+<p><span class="peque">Texto marcado como </span><code>.peque</code></p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h3&gt;Fuente de títulos&lt;/h3&gt;
+&lt;p&gt;Fuente de párrafo.&lt;/p&gt;
+&lt;p&gt;Texto marcado como &lt;strong&gt;destacado&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Texto en &lt;em&gt;énfasis&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Texto con grosor de tipografía &lt;span class&#x3D;&quot;light&quot;&gt;ligera&lt;/span&gt;, marcado como &lt;code&gt;.light&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class&#x3D;&quot;peque&quot;&gt;Texto marcado como &lt;/span&gt;&lt;code&gt;.peque&lt;/code&gt;&lt;/p&gt;</code></pre>
+</div>
+
 
 </div>
 

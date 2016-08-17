@@ -1,34 +1,4 @@
-// -----
-// TIPOGRAFIA
-// -----
 
-h1, h2, h3, h4, h5, h6 {
-	font-family:$headlines;
-}
-
-h1 {
-	@include adjust-font-size-to($h1);
-}
-
-h2 {
-	@include adjust-font-size-to($h2);
-}
-
-h3 {
-	@include adjust-font-size-to($h3);
-}
-
-h4 {
-	@include adjust-font-size-to($h4);
-}
-
-h5, small {
-	@include adjust-font-size-to($small);
-}
-
-h6 {
-	@include adjust-font-size-to($smaller);
-}
 
 // -----
 // ENLACES - LoVe For HAte

@@ -6,7 +6,7 @@
  */
 
 html {
-  font-family: $sans-serif; /* 1 */
+  font-family: $fuente-body; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   color:$negro;
@@ -136,7 +136,7 @@ strong {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: $bold;
 }
 
 /**
@@ -148,30 +148,12 @@ dfn {
 }
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/**
  * Add the correct background and color in IE 9-.
  */
 
 mark {
   background-color: #ff0;
   color: #000;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
 }
 
 /**
