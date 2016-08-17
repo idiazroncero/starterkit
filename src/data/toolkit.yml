@@ -7,3 +7,8 @@ colors:
     Red: "rgb(201, 55, 6)"
     Yellow: "rgb(252, 207, 80)"
     Blue: "rgb(39, 102, 143)"
+
+variables:
+  color:
+    negro: "#3b3b3b"
+    blanco: "#fff"

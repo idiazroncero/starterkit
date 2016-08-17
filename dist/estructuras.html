@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
 
 	<!-- toolkit styles -->
-	<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+	<link rel="stylesheet" href="/assets/toolkit/styles/idiazroncero.css">
 	<!-- /toolkit styles -->
 
 </head>
@@ -85,7 +85,18 @@
 					<a href="estructuras.html" class="f-menu__heading">Estructuras</a>
 					<ul>
 						<li>
+							<a href="estructuras.html#caja">Caja</a>
+						</li>
+						<li>
 							<a href="estructuras.html#form">Form</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="variables.html" class="f-menu__heading">Variables</a>
+					<ul>
+						<li>
+							<a href="variables.html#color">Color</a>
 						</li>
 					</ul>
 				</li>
@@ -127,6 +138,42 @@
 <h1 data-f-toggle="labels">Structures</h1>
 
 
+<div class="f-item-group" id="caja">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Caja</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>These are notes associated with this <code>button</code> component.</p>
+<p><code>$main-color</code> define el color del borde;</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="caja">
+	Esto es una caja
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;caja&quot;&gt;
+	Esto es una caja
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="form">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -143,6 +190,7 @@
 <div class="f-item-preview">
 	<form action="">
 	<div>
+		olasdofdaso
 	</div>
 
 </form>
@@ -150,6 +198,7 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;form action&#x3D;&quot;&quot;&gt;
 	&lt;div&gt;
+		olasdofdaso
 	&lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
@@ -165,7 +214,7 @@
 	<script src="/assets/fabricator/scripts/f.js"></script>
 
 	<!-- toolkit scripts -->
-	<script src="/assets/toolkit/scripts/toolkit.js"></script>
+	<script src="/assets/toolkit/scripts/idiazroncero.js"></script>
 	<!-- /toolkit scripts -->
 
 </body>
